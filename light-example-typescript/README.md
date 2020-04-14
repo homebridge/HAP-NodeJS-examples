@@ -1,4 +1,4 @@
-# light-example-javascript
+# light-example-typescript
 
 Accessory exposing a `Lightbulb` service with `On` and `Brightness` characteristics.  
 The default pairing code is set to `678-90-876` and runs on port `47128`.

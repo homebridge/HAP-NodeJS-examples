@@ -1,13 +1,17 @@
 import {
-  Accessory, Categories,
+  Accessory,
+  Categories,
   Characteristic,
   CharacteristicEventTypes,
-  CharacteristicGetCallback, CharacteristicSetCallback, CharacteristicValue, init, PublishInfo,
+  CharacteristicGetCallback,
+  CharacteristicSetCallback,
+  CharacteristicValue,
   Service,
   uuid
 } from "hap-nodejs";
 
-init(); // initialize the hap storage, optional a custom storage path can be supplied as a argument
+// optionally set a different storage location with code below. HAPStorage needs to be added to the list of imports above.
+// HAPStorage.setCustomStoragePath("...");
 
 const accessoryUuid = uuid.generate("hap.examples.light");
 const accessory = new Accessory("Example Accessory Name", accessoryUuid);

@@ -5,7 +5,8 @@ const Characteristic = hap.Characteristic;
 const CharacteristicEventTypes = hap.CharacteristicEventTypes;
 const Service = hap.Service;
 
-hap.init(); // initialize the hap storage, optional a custom storage path can be supplied as a argument
+// optionally set a different storage location with code below
+// hap.HAPStorage.setCustomStoragePath("...");
 
 const accessoryUuid = hap.uuid.generate("hap.examples.light");
 const accessory = new Accessory("Example Accessory Name", accessoryUuid);

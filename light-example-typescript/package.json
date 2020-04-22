@@ -11,7 +11,7 @@
   "author": "Andreas Bauer <mail@anderl-bauer.de>",
   "license": "ISC",
   "dependencies": {
-    "hap-nodejs": "^0.5.11"
+    "hap-nodejs": "^0.6.4"
   },
   "devDependencies": {
     "typescript": "^3.8.3",

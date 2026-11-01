@@ -3,6 +3,11 @@
 Accessory exposing a `Lightbulb` service with `On` and `Brightness` characteristics.  
 The default pairing code is set to `678-90-876` and runs on port `47129`.
 
+## Requirements
+
+- [Node.js](https://nodejs.org) `v22.12.0` or later, `v24` or `v26`
+- This example uses [HAP-NodeJS](https://github.com/homebridge/hap-nodejs) `v2.3.0` or later (the `@homebridge/hap-nodejs` package)
+
 ## Running example
 
 Run the following command to install all necessary dependencies:  
@@ -12,12 +17,12 @@ npm install
 
 When the command is finished you can start the application by executing:    
 ```
-node src/light.js
+npm start
 ```
 
 Now you can navigate into the Home App and add the accessory to your Home with the provided setup code.
 
-Horray you managed to add your first custom HomeKit accessory!
+Hooray, you managed to add your first custom HomeKit accessory!
 
 ## Building upon the example
 
@@ -29,4 +34,5 @@ additional optional characteristics: `Hue` and `Saturation`, to provide coloring
 
 Try adding one of those characteristics and play around with it in the Home App.  
 Additionally, you can check out different types of services and their set of characteristics and 
-explore how they react in the Home App.
+explore how they react in the Home App. The [HAP-NodeJS documentation](https://developers.homebridge.io/hap-nodejs/) 
+lists every service and characteristic.

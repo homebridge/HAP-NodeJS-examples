@@ -3,6 +3,11 @@
 Accessory exposing a `Lightbulb` service with `On` and `Brightness` characteristics.  
 The default pairing code is set to `678-90-876` and runs on port `47128`.
 
+## Requirements
+
+- [Node.js](https://nodejs.org) `v22.12.0` or later, `v24` or `v26`
+- This example uses [HAP-NodeJS](https://github.com/homebridge/hap-nodejs) `v2.3.0` or later (the `@homebridge/hap-nodejs` package)
+
 ## Running
 
 Run the following command to install all necessary dependencies:  
@@ -10,29 +15,27 @@ Run the following command to install all necessary dependencies:
 npm install
 ```
 
-As this example is written in Typescript it must be converted to Javascript before it can be executed.  
-This can be done using the Typescript compiler (`tsc`) included in this example.
-
-To compile the project you can run a scrip defined in the `package.json` like the following:  
+As this example is written in TypeScript it must be converted to JavaScript before it can be executed.  
+This can be done using the TypeScript compiler (`tsc`) included in this example:  
 ```
 npm run build
 ```
 
-After that step the compiled Javascript files are located in the `./lib` directory.  
+After that step the compiled JavaScript files are located in the `./lib` directory.  
 Now you can execute the following to run the application:
 ```
-node lib/light.js
+npm start
 ```
 
-If you don't want to always run `npm run build` to recompile your Typescript files, you can also 
-compile Typescript on the fly when executing like the following:
+If you don't want to always run `npm run build` to recompile your TypeScript files, you can also 
+run the TypeScript file directly with [tsx](https://github.com/privatenumber/tsx):
 ```
-ts-node src/light.ts
+npm run dev
 ```
 
 Now you can navigate into the Home App and add the accessory to your Home with the provided setup code.
 
-Horray you managed to add your first custom HomeKit accessory!
+Hooray, you managed to add your first custom HomeKit accessory!
 
 ## Building upon the example
 
@@ -44,5 +47,6 @@ additional optional characteristics: `Hue` and `Saturation`, to provide coloring
 
 Try adding one of those characteristics and play around with it in the Home App.  
 Additionally, you can check out different types of services and their set of characteristics and 
-explore how they react in the Home App.  
-Don't forget to run `npm run build`, if you do not run the Typescript code directly as described above.
+explore how they react in the Home App. The [HAP-NodeJS documentation](https://developers.homebridge.io/hap-nodejs/) 
+lists every service and characteristic.  
+Don't forget to run `npm run build`, if you do not run the TypeScript code directly as described above.

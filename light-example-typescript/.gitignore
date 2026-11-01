@@ -2,6 +2,9 @@
 ### HAP-NodeJS files
 persist
 
+### Compiled output
+lib
+
 ### Node template
 # Logs
 logs
